@@ -18,7 +18,7 @@ function AppLayout() {
         <AppContext.Provider value={data}>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={<Landing />}>
+                    <Route path='' element={<Landing />}>
                         <Route path='/home' element={<Home />}></Route>
                         <Route path='/movies' element={<Movies />}></Route>
                         <Route path='/tvseries' element={<Tvseries />}></Route>
