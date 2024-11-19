@@ -6,7 +6,7 @@ import SearchBar from './SearchBar'
 function Landing() {
     const data = useContext(AppContext)
     return (
-        <div className='flex gap-9 h-svh bg-black pt-8 pl-8 '>
+        <div className='flex gap-9 h-svh bg-black pt-8 pl-8  '>
 
             <nav className='bg-blue-950 w-24 h-4/5 rounded-3xl pt-9 flex flex-col space-y-20  '>
                 <div className='mx-auto' ><Link to={'/home'}><img className=" w-8,h-6" src='./assets/logo.svg' alt='logo'></img></Link></div>
