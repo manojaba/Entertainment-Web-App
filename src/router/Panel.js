@@ -12,7 +12,7 @@ function Panel() {
             {
                 movies.map(movie => {
                     return (
-                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} ></ThumbnailRegular>
+                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked}></ThumbnailRegular>
                     )
 
                 })
