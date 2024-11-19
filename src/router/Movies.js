@@ -1,14 +1,30 @@
-import React from 'react'
-import Panel from './Panel'
-import SearchBar from './SearchBar'
-import Trending from './Trending'
+import React, { useContext } from 'react';
+import AppContext from './Context';
+import ThumbnailRegular from './ThumbnailRegular';
 
 function Movies() {
+    const data = useContext(AppContext);
+
+    let movies;
+
+    movies = data.filter((movie) => movie.category == 'Movie');
+
+
+
     return (
-        <div>
-            <SearchBar />
-            <Trending />
-            <Panel />
+        <div className='grid grid-cols-4'>
+            {
+                movies.map((movie) => {
+                    return (
+                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} />
+                    )
+                })
+            }
+
+
+
+
+
         </div>
     )
 }

@@ -11,11 +11,11 @@ import Tvseries from './Tvseries'
 
 function AppLayout() {
 
-    const movies = data;
+
 
 
     return (
-        <AppContext.Provider value={movies}>
+        <AppContext.Provider value={data}>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Landing />}>
