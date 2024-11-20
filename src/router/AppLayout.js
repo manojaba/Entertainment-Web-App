@@ -13,6 +13,8 @@ function AppLayout() {
 
     const movieList = data;
     const [movies, setMovies] = useState(movieList)
+    const [searchFilter, setSearchFilter] = useState('');
+    console.log(searchFilter);
 
 
 
@@ -45,7 +47,7 @@ function AppLayout() {
 
     return (
 
-        <AppContext.Provider value={{ movies, handleClick }}>
+        <AppContext.Provider value={{ movies, handleClick, setSearchFilter, searchFilter }}>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Landing />}>
