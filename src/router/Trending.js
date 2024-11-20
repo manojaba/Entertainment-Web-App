@@ -12,7 +12,7 @@ import ThumbnailTrending from "./ThumbnailTrending";
 function Trending() {
 
 
-    const movies = useContext(AppContext);
+    const { movies, handleData } = useContext(AppContext);
     let trendingMovies = movies.filter((each) => each.isTrending === true)
 
     const settings = {
@@ -34,7 +34,7 @@ function Trending() {
 
 
     return (
-        <div className="slider-container max-w-6xl mx-auto ">
+        <div >
             <Slider {...settings}>
                 {
                     trendingMovies.map((movie) => {

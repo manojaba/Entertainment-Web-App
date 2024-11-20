@@ -3,7 +3,9 @@ import AppContext from './Context'
 import ThumbnailRegular from './ThumbnailRegular'
 
 function Panel() {
-    const movies = useContext(AppContext)
+    const { movies, handleClick } = useContext(AppContext)
+
+
 
 
 
@@ -12,7 +14,7 @@ function Panel() {
             {
                 movies.map(movie => {
                     return (
-                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked}></ThumbnailRegular>
+                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked} handleClick={handleClick} ></ThumbnailRegular>
                     )
 
                 })

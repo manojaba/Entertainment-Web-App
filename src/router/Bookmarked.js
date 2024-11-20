@@ -4,7 +4,7 @@ import ThumbnailRegular from './ThumbnailRegular'
 
 function Bookmarked() {
 
-    const movies = useContext(AppContext)
+    const { movies, handleClick } = useContext(AppContext)
     let bookmarkList = movies.filter((movie) => movie.isBookmarked == true)
 
 

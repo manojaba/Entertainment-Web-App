@@ -3,10 +3,24 @@
 @tailwind utilities;
 
 .slick-slide>div {
-    margin: 0 40px;
+    width: 470px;
+    height: 230px;
+    margin-right: 40px;
+
     background-color: red;
 }
 
 .slick-slider {
-    width: 600px;
+    width: 1400px;
+
+}
+
+@layer base {
+    @font-face {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(./fonts/Outfit-VariableFont_wght.woff2) format('woff2');
+    }
 }

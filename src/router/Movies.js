@@ -3,20 +3,20 @@ import AppContext from './Context';
 import ThumbnailRegular from './ThumbnailRegular';
 
 function Movies() {
-    const data = useContext(AppContext);
+    const { movies, handleClick } = useContext(AppContext);
 
-    let movies;
 
-    movies = data.filter((movie) => movie.category == 'Movie');
+
+    let moviesList = movies.filter((movie) => movie.category == 'Movie');
 
 
 
     return (
         <div className='grid grid-cols-4'>
             {
-                movies.map((movie) => {
+                moviesList.map((movie) => {
                     return (
-                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked} />
+                        <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked} handleClick={handleClick} />
                     )
                 })
             }
