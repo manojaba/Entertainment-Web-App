@@ -35,11 +35,12 @@ function Trending() {
 
     return (
         <div >
-            <Slider {...settings}>
+            <h1 className="text-white ml-[16px] md:ml-0 mb-[16px] md:mb-[25px] font-Outfit font-light text-[20px] md:text-[32px]">Trending</h1>
+            <Slider {...settings} className="ml-[16px] md:ml-0 rounded-[8px] mb-[24px] md:mb-[40px]">
                 {
                     trendingMovies.map((movie) => {
                         return (
-                            <ThumbnailTrending key={movie.title} thumbnail={movie.thumbnail.trending.large} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked}></ThumbnailTrending>
+                            <ThumbnailTrending key={movie.title} thumbnail={movie.thumbnail.trending} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked}></ThumbnailTrending>
 
                         )
                     })

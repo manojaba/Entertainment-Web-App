@@ -2,25 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide>div {
-    width: 470px;
-    height: 230px;
-    margin-right: 40px;
 
-    background-color: red;
+.slick-slide {
+    
+   min-width:240px;
+   min-height:140px;
+   margin-right:20px;
+   flex-shrink: 0;
+   
+  
+
+    
+}
+
+.slick-slide>div {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+    
 }
 
 .slick-slider {
-    width: 1400px;
+    width:100%;
+    height:140px;
+    
+    overflow: hidden;
+    
+
+
+   
+    
+
+    
 
 }
 
-@layer base {
-    @font-face {
-        font-family: 'Outfit';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(./fonts/Outfit-VariableFont_wght.woff2) format('woff2');
+.slick-track {
+    display: flex;
+    flex-wrap: nowrap;
+  
+   
+    
+
+}
+
+@media (min-width: 768px) {
+    .slick-slide {
+        min-width: 470px;
+        min-height: 230px;
+    }
+    .slick-slider {
+        min-height: 230px;
     }
 }
+
