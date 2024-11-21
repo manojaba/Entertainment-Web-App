@@ -9,7 +9,11 @@ function Home() {
     return (
         <div >
             <SearchBar />
+            <h1 className="text-white ml-[16px] md:ml-0 mb-[16px] md:mb-[25px] font-Outfit font-light text-[20px] md:text-[32px]">Trending</h1>
             <Trending />
+
+
+
 
             <Panel />
 

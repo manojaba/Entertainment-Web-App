@@ -5,11 +5,11 @@ import AppContext from './Context'
 function Landing() {
     const data = useContext(AppContext)
     return (
-        <div className='  lg:flex lg:gap-9 md:p-[24px] lg:h-full bg-[#10141E] lg:pt-8 lg:pl-8  '>
+        <div className='  w-full xl:flex  xl:gap-9 md:p-[24px]  bg-green-500 lg:pt-8 lg:pl-8  '>
 
-            <nav className=' flex justify-between content-center  px-[16px] py-[18px] md:py-[22px] lg:px-[28px] md:px-[20px] rounded-[10px] bg-[#161D2F] lg:w-[96px] lg:h-[960px] lg:rounded-3xl lg:pt-9  lg:pb-[32px] lg:flex-col lg:justify-normal   '>
-                <div className='lg:mx-auto lg:mb-[40px]' ><Link to={'/'}><img className=" w-8,h-6" src='./assets/logo.svg' alt='logo'></img></Link></div>
-                <div className=' flex my-auto  space-x-[24px] lg:space-x-0 lg:mx-auto lg:space-y-[40px] lg:flex-col lg:mt-[74px]'>
+            <nav className=' flex   justify-between content-center  px-[16px] py-[18px] md:py-[22px] xl:px-[28px] md:px-[20px] rounded-[10px] bg-[#161D2F] xl:w-[96px] xl:h-[960px] xl:rounded-3xl xl:pt-9  xl:pb-[32px] xl:flex-col xl:justify-normal   '>
+                <div className='xl:mx-auto xl:mb-[40px]' ><Link to={'/'}><img className=" w-8,h-6" src='./assets/logo.svg' alt='logo'></img></Link></div>
+                <div className=' flex my-auto  space-x-[24px] xl:space-x-0 xl:mx-auto xl:space-y-[40px] xl:flex-col xl:mt-[74px]'>
                     <Link className='group ' to={'/'}><svg
                         width="20"
                         height="20"
@@ -41,10 +41,10 @@ function Landing() {
                     >
                         <path d="M15.387 0c.202 0 .396.04.581.119.291.115.522.295.694.542.172.247.258.52.258.82v17.038c0 .3-.086.573-.258.82a1.49 1.49 0 0 1-.694.542 1.49 1.49 0 0 1-.581.106c-.423 0-.79-.141-1.098-.423L8.46 13.959l-5.83 5.605c-.317.29-.682.436-1.097.436-.202 0-.396-.04-.581-.119a1.49 1.49 0 0 1-.694-.542A1.402 1.402 0 0 1 0 18.52V1.481c0-.3.086-.573.258-.82A1.49 1.49 0 0 1 .952.119C1.137.039 1.33 0 1.533 0h13.854Z" /></svg></Link>
                 </div>
-                <div><img className="w-[24px] h-[24px] lg:min-w-[40px] lg:h-[40px]  lg-mx-auto md:w-[32px] md:h-[32px] border-solid border-[1px] rounded-full border-white" src='./assets/image-avatar.png'></img></div>
+                <div><img className="w-[24px] h-[24px] xl:min-w-[40px] xl:h-[40px]  xl-mx-auto md:w-[32px] md:h-[32px] border-solid border-[1px] rounded-full border-white" src='./assets/image-avatar.png'></img></div>
 
             </nav>
-            <div className='lg:w-full lg:pt-[32px]'>
+            <div >
 
 
 

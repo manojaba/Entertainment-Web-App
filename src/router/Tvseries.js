@@ -14,17 +14,18 @@ function Tvseries() {
     return (
         <div>
             <SearchBar />
-            <div className='grid grid-cols-4'>
+            <h1 className='font-Outfit text-white font-light text-[20px] md:text-[32px] mb-[24px] mx-[16px]'>TV Series</h1>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-[16px] md:gap-[30px] mx-[16px]'>
                 {
                     searchList.map((movie) => {
                         return (
-                            <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked} handleClick={handleClick} />
+                            <ThumbnailRegular key={movie.title} thumbnail={movie.thumbnail.regular} title={movie.title} year={movie.year} category={movie.category} rating={movie.rating} isBookmarked={movie.isBookmarked} handleClick={handleClick} />
                         )
                     })
                 }
 
             </div>
-        </div>
+        </div >
     )
 }
 

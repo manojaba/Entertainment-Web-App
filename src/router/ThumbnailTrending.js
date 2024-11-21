@@ -3,14 +3,14 @@ export default function ThumbnailTrending({ title, thumbnail, year, category, ra
     console.log(thumbnail);
 
     return (
-        <div className="relative  ">
+        <div className="relative ">
 
 
 
-            <picture >
-                <source media="(min-width: 768px)" srcset={thumbnail.large} />
-                <img className="rounded-[8px]" src={thumbnail.small} alt='thumbnail trending' />
-            </picture>
+
+
+            <img className="rounded-[8px] min-w-[240px] min-h-[140px] md:min-w-[240px] xl:min-w-[470px]  " src={thumbnail.large} alt='thumbnail trending' />
+
 
 
             <div className=" absolute top-2 md:top-[16px] md:right-[24px] right-2 bg-[#10141E] bg-opacity-50 rounded-3xl w-8 h-8 content-center  ">{isBookmarked ? <img className="mx-auto" src="./assets/icon-bookmark-full.svg"></img> : <img className="mx-auto" src="./assets/icon-bookmark-empty.svg"></img>}</div>
