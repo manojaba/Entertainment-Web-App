@@ -1,11 +1,11 @@
 export default function ThumbnailRegular({ title, thumbnail, year, category, rating, isBookmarked, handleClick }) {
 
     return (
-        <div className="relative max-w-[220px] md:max-w-[280px] group  ">
+        <div className="relative  group  ">
 
 
             <div className="relative">
-                <img className="  rounded-[8px] h-auto min-w-[164px] md:min-w-[220px] xl-min-w-[280px]" src={thumbnail.medium} alt={title}>
+                <img className="  rounded-[8px]   " src={thumbnail.medium} alt={title}>
 
                 </img>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-[117px] h-[48px] rounded-[26px] bg-white bg-opacity-25 space-x-[18px] py-[9px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">

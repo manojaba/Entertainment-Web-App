@@ -8,5 +8,32 @@
 }
 
 .slick-list {
-    margin-right: -15px; /* Compensate for extra spacing */
+     margin-right: -15px; /* Compensate for extra spacing */
+   
+}
+
+.slick-slider {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1280px) {
+    .slick-slide > div {
+        margin-right: 40px; /* Increased margin for larger screens */
+    }
+
+    .slick-list {
+        margin-right: -40px; /* Adjust compensation for larger margin */
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .slick-slide > div {
+        margin-right: 40px; /* Increased margin for larger screens */
+    }
+
+    .slick-list {
+        margin-right: -40px; /* Adjust compensation for larger margin */
+    }
 }

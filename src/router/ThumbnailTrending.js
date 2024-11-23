@@ -3,13 +3,25 @@ export default function ThumbnailTrending({ title, thumbnail, year, category, ra
     console.log(thumbnail);
 
     return (
-        <div className="relative ">
+        <div className="relative group ">
+
+            <img className="rounded-[8px]      " src={thumbnail.large} alt='thumbnail trending' />
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-[117px] h-[48px] rounded-[26px] bg-white bg-opacity-25 space-x-[18px] py-[9px] opacity-0  group-hover:opacity-100 transition-opacity duration-300">
+                <svg width="30"
+                    height="30"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 0C6.713 0 0 6.713 0 15c0 8.288 6.713 15 15 15 8.288 0 15-6.712 15-15 0-8.287-6.712-15-15-15Zm-3 21V8l9 6.5-9 6.5Z"
+                        fill="#FFF" /></svg>
+                <span className="font-Outfit font-medium text-[18px] text-white">Play</span>
+            </div>
 
 
 
 
 
-            <img className="rounded-[8px] min-w-[240px] min-h-[140px] md:min-w-[240px] xl:min-w-[470px]  " src={thumbnail.large} alt='thumbnail trending' />
+
+
+
 
 
 

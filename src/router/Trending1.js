@@ -37,7 +37,7 @@ function Trending1() {
 
 
     return (
-        <div className="slider-container max-w-[1200px] ">
+        <div className="slider-container max-w-[full] ">
 
 
             <Slider {...settings} className="ml-[16px] md:ml-0 rounded-[8px] mb-[24px] md:mb-[40px]  ">

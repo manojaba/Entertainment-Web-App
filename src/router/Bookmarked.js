@@ -15,7 +15,7 @@ function Bookmarked() {
         <div>
             <SearchBar />
             <h1 className='font-Outfit text-white font-light text-[20px] md:text-[32px] mb-[24px] mx-[16px]'>Bookmarked Movies</h1>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-[16px] md:gap-[30px] mx-[16px]'>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-[16px] md:gap-[30px] mx-[16px]'>
                 {
                     searchList.map((movie) => {
                         return (
