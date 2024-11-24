@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Entertainment-Web-App/static/css/main.3a1cfb97.css",
-    "main.js": "/Entertainment-Web-App/static/js/main.352976c6.js",
+    "main.js": "/Entertainment-Web-App/static/js/main.d6cf8b67.js",
     "static/js/453.f7338088.chunk.js": "/Entertainment-Web-App/static/js/453.f7338088.chunk.js",
     "static/media/slick.svg": "/Entertainment-Web-App/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Entertainment-Web-App/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/Entertainment-Web-App/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Entertainment-Web-App/index.html",
     "main.3a1cfb97.css.map": "/Entertainment-Web-App/static/css/main.3a1cfb97.css.map",
-    "main.352976c6.js.map": "/Entertainment-Web-App/static/js/main.352976c6.js.map",
+    "main.d6cf8b67.js.map": "/Entertainment-Web-App/static/js/main.d6cf8b67.js.map",
     "453.f7338088.chunk.js.map": "/Entertainment-Web-App/static/js/453.f7338088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a1cfb97.css",
-    "static/js/main.352976c6.js"
+    "static/js/main.d6cf8b67.js"
   ]
 }
