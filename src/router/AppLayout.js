@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Bookmarked from './Bookmarked'
 import AppContext from './Context'
 import data from './data'
@@ -48,7 +48,7 @@ function AppLayout() {
     return (
 
         <AppContext.Provider value={{ movies, handleClick, setSearchFilter, searchFilter }}>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path='/' element={<Landing />}>
                         <Route index element={<Home />}></Route>
@@ -58,7 +58,7 @@ function AppLayout() {
 
                     </Route>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </AppContext.Provider>
 
 
