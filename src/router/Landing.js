@@ -8,7 +8,7 @@ function Landing() {
         <div className='bg-[#10141E]  '>
             <div className='  w-full xl:flex  xl:gap-9 md:p-[24px]  lg:pt-8 lg:pl-8 xl:max-w-[1440px] 2xl:max-w-[1800px] mx-auto '>
 
-                <nav className=' flex   justify-between content-center  px-[16px] py-[18px] md:py-[22px] xl:px-[28px] md:px-[20px] rounded-[10px] bg-[#161D2F] xl:w-[96px] xl:h-[960px] xl:rounded-3xl xl:pt-9  xl:pb-[32px] xl:flex-col xl:justify-normal   '>
+                <nav className=' flex   justify-between content-center  px-[16px] py-[18px] md:py-[22px] xl:px-[28px] md:px-[20px] rounded-[10px] bg-[#161D2F] xl:w-[96px] xl:h-[960px] xl:rounded-3xl xl:pt-9  xl:pb-[32px] xl:flex-col xl:justify-normal  sticky top-8 '>
                     <div className='xl:mx-auto xl:mb-[40px]' ><Link to={'/'}><img className=" w-8,h-6" src='./assets/logo.svg' alt='logo'></img></Link></div>
                     <div className=' flex my-auto  space-x-[24px] xl:space-x-0 xl:mx-auto xl:space-y-[40px] xl:flex-col xl:mt-[74px]'>
                         <NavLink className={({ isActive }) =>

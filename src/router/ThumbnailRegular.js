@@ -4,7 +4,7 @@ export default function ThumbnailRegular({ title, thumbnail, year, category, rat
         <div className="relative  group  ">
 
 
-            <div className="relative">
+            <div className="relative cursor-pointer">
                 <img className="  rounded-[8px]   " src={thumbnail.medium} alt={title}>
 
                 </img>
@@ -24,7 +24,7 @@ export default function ThumbnailRegular({ title, thumbnail, year, category, rat
             <div onClick={() => handleClick(title)} className=" absolute top-2 md:top-[16px] md:right-[24px]  right-2 bg-[#10141E] bg-opacity-50 rounded-3xl w-8 h-8 content-center  ">{isBookmarked ? <img className="mx-auto" src="./assets/icon-bookmark-full.svg"></img> : <img className="mx-auto" src="./assets/icon-bookmark-empty.svg"></img>}</div>
 
 
-            <div class="flex items-center text-white space-x-[7px] font-Outfit  font-light  md:text-[13px] text-[11px] opacity-75 mb-[4px] mt-[8px]">
+            <div class="flex items-center text-white space-x-[7px] font-Outfit  font-light  md:text-[13px] text-[11px] opacity-75 mb-[4px] mt-[8px] cursor-pointer">
                 <span>{year}</span>
                 <span class="h-1 w-1 bg-white rounded-full"></span>
                 <img src={category === 'Movie' ? './assets/icon-category-movie.svg' : './assets/icon-category-tv.svg'} alt="Movie Logo" class="h-4 w-4" />
@@ -33,7 +33,7 @@ export default function ThumbnailRegular({ title, thumbnail, year, category, rat
                 <span>{rating}</span>
             </div>
 
-            <p className="text-white font-medium font-Outfit text-[14px] md:text-[18px] lg:text-[24px]">{title}</p>
+            <p className="text-white font-medium font-Outfit text-[14px] md:text-[18px] lg:text-[24px] cursor-pointer">{title}</p>
 
 
 

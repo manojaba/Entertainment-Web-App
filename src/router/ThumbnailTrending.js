@@ -3,7 +3,7 @@ export default function ThumbnailTrending({ title, thumbnail, year, category, ra
     console.log(thumbnail);
 
     return (
-        <div className="relative group ">
+        <div className="relative group  cursor-pointer">
 
             <img className="rounded-[8px]      " src={thumbnail.large} alt='thumbnail trending' />
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center w-[117px] h-[48px] rounded-[26px] bg-white bg-opacity-25 space-x-[18px] py-[9px] opacity-0  group-hover:opacity-100 transition-opacity duration-300">
