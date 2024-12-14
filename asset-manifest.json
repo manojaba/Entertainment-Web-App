@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Entertainment-Web-App/static/css/main.3a1cfb97.css",
-    "main.js": "/Entertainment-Web-App/static/js/main.d6cf8b67.js",
+    "main.css": "/Entertainment-Web-App/static/css/main.3c4c9153.css",
+    "main.js": "/Entertainment-Web-App/static/js/main.f9efe920.js",
     "static/js/453.f7338088.chunk.js": "/Entertainment-Web-App/static/js/453.f7338088.chunk.js",
     "static/media/slick.svg": "/Entertainment-Web-App/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Entertainment-Web-App/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Entertainment-Web-App/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Entertainment-Web-App/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Entertainment-Web-App/index.html",
-    "main.3a1cfb97.css.map": "/Entertainment-Web-App/static/css/main.3a1cfb97.css.map",
-    "main.d6cf8b67.js.map": "/Entertainment-Web-App/static/js/main.d6cf8b67.js.map",
+    "main.3c4c9153.css.map": "/Entertainment-Web-App/static/css/main.3c4c9153.css.map",
+    "main.f9efe920.js.map": "/Entertainment-Web-App/static/js/main.f9efe920.js.map",
     "453.f7338088.chunk.js.map": "/Entertainment-Web-App/static/js/453.f7338088.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a1cfb97.css",
-    "static/js/main.d6cf8b67.js"
+    "static/css/main.3c4c9153.css",
+    "static/js/main.f9efe920.js"
   ]
 }
